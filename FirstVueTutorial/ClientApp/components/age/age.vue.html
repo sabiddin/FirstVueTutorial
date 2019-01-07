@@ -1,0 +1,21 @@
+﻿<template>
+    <div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="form-group-sm">
+                    <strong>Please enter your Date of birth:</strong>
+                    <input class="form-control" type="date" name="dob" v-model="dob" />
+                </div>
+            </div>
+        </div>
+        <br />
+      <div class="row">
+          <div class="col-lg-4">              
+                  <button class="btn btn-default" v-on:click="getAge">Check Age</button>
+                  <strong>Your age is: </strong><span>{{message}}</span>              
+          </div>
+      </div>
+        
+    </div>
+</template>
+<script src="./age.ts"></script>
